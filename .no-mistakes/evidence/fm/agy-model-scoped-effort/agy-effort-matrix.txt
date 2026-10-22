@@ -1,0 +1,40 @@
+<default>                  low     fm-spawn=EMIT  agy=ACCEPT  MATCH              
+<default>                  medium  fm-spawn=EMIT  agy=ACCEPT  MATCH              
+<default>                  high    fm-spawn=EMIT  agy=ACCEPT  MATCH              
+<default>                  xhigh   fm-spawn=OMIT  agy=REJECT  MATCH              has no "xhigh" effort (available: low, medium, high)
+<default>                  max     fm-spawn=OMIT  agy=REJECT  MATCH              has no "max" effort (available: low, medium, high)
+gemini-3.8-flash           low     fm-spawn=EMIT  agy=ACCEPT  MATCH              
+gemini-3.8-flash           medium  fm-spawn=EMIT  agy=ACCEPT  MATCH              
+gemini-3.8-flash           high    fm-spawn=EMIT  agy=ACCEPT  MATCH              
+gemini-3.8-flash           xhigh   fm-spawn=OMIT  agy=REJECT  MATCH              has no "xhigh" effort (available: low, medium, high)
+gemini-3.8-flash           max     fm-spawn=OMIT  agy=REJECT  MATCH              has no "max" effort (available: low, medium, high)
+gemini-3.8-flash-low       low     fm-spawn=EMIT  agy=ACCEPT  MATCH              
+gemini-3.8-flash-low       medium  fm-spawn=OMIT  agy=REJECT  MATCH              conflicts with --effort=medium
+gemini-3.8-flash-low       high    fm-spawn=OMIT  agy=REJECT  MATCH              conflicts with --effort=high
+gemini-3.8-flash-low       xhigh   fm-spawn=OMIT  agy=REJECT  MATCH              conflicts with --effort=xhigh
+gemini-3.8-flash-low       max     fm-spawn=OMIT  agy=REJECT  MATCH              conflicts with --effort=max
+gemini-3.8-flash-medium    low     fm-spawn=OMIT  agy=REJECT  MATCH              conflicts with --effort=low
+gemini-3.8-flash-medium    medium  fm-spawn=EMIT  agy=ACCEPT  MATCH              
+gemini-3.8-flash-medium    high    fm-spawn=OMIT  agy=REJECT  MATCH              conflicts with --effort=high
+gemini-3.8-flash-medium    xhigh   fm-spawn=OMIT  agy=REJECT  MATCH              conflicts with --effort=xhigh
+gemini-3.8-flash-medium    max     fm-spawn=OMIT  agy=REJECT  MATCH              conflicts with --effort=max
+gemini-3.8-flash-high      low     fm-spawn=OMIT  agy=REJECT  MATCH              conflicts with --effort=low
+gemini-3.8-flash-high      medium  fm-spawn=OMIT  agy=REJECT  MATCH              conflicts with --effort=medium
+gemini-3.8-flash-high      high    fm-spawn=EMIT  agy=ACCEPT  MATCH              
+gemini-3.8-flash-high      xhigh   fm-spawn=OMIT  agy=REJECT  MATCH              conflicts with --effort=xhigh
+gemini-3.8-flash-high      max     fm-spawn=OMIT  agy=REJECT  MATCH              conflicts with --effort=max
+claude-sonnet-4-6          low     fm-spawn=OMIT  agy=REJECT  MATCH              --effort is not supported for model 
+claude-sonnet-4-6          medium  fm-spawn=OMIT  agy=REJECT  MATCH              --effort is not supported for model 
+claude-sonnet-4-6          high    fm-spawn=OMIT  agy=REJECT  MATCH              --effort is not supported for model 
+claude-sonnet-4-6          xhigh   fm-spawn=OMIT  agy=REJECT  MATCH              --effort is not supported for model 
+claude-sonnet-4-6          max     fm-spawn=OMIT  agy=REJECT  MATCH              --effort is not supported for model 
+claude-opus-4-6-thinking   low     fm-spawn=OMIT  agy=REJECT  MATCH              --effort is not supported for model 
+claude-opus-4-6-thinking   medium  fm-spawn=OMIT  agy=REJECT  MATCH              --effort is not supported for model 
+claude-opus-4-6-thinking   high    fm-spawn=OMIT  agy=REJECT  MATCH              --effort is not supported for model 
+claude-opus-4-6-thinking   xhigh   fm-spawn=OMIT  agy=REJECT  MATCH              --effort is not supported for model 
+claude-opus-4-6-thinking   max     fm-spawn=OMIT  agy=REJECT  MATCH              --effort is not supported for model 
+gpt-oss-120b-medium        low     fm-spawn=OMIT  agy=REJECT  MATCH              conflicts with --effort=low
+gpt-oss-120b-medium        medium  fm-spawn=EMIT  agy=ACCEPT  MATCH              
+gpt-oss-120b-medium        high    fm-spawn=OMIT  agy=REJECT  MATCH              conflicts with --effort=high
+gpt-oss-120b-medium        xhigh   fm-spawn=OMIT  agy=REJECT  MATCH              conflicts with --effort=xhigh
+gpt-oss-120b-medium        max     fm-spawn=OMIT  agy=REJECT  MATCH              conflicts with --effort=max

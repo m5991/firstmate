@@ -1,0 +1,4 @@
+ok - fm-spawn: agy launch carries brief, model, effort, and autonomy with cleared markers
+ok - fm-spawn: agy omits --effort on Claude models but records it in task metadata
+ok - fm-spawn: agy omits an effort that conflicts with the model id's suffix
+ok - fm-spawn: agy passes the effort through on its default model
